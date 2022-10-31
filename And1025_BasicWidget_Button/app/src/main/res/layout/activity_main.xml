@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFAA00">
+    <!--
+    XML 기본 속성
+    1. layout_width, layout_height 속성: 위젯 등의 가로, 세로 크기 지정
+       => match_parent : 위젯을 위젯이 위치한 부모(레이아웃 등)의 크기만큼 꽉채움
+       => wrap_content : 위젯을 위젯 내부의 내용(텍스트, 그림 등)에 맞춤
+    2. id 속성 : 자바 코드에서 위젯을 연결하기 위해 필요한 아이디 지정
+                 => findViewById() 메서드를 호출하여 R.id.아이디 형태로 전달
+    3. text 속성 : 텍스트뷰, 버튼, 라디어버튼 등에 표시할 텍스트 지정
+    4. background : 해당 위젯의 배경색 설정
+      => 주의! 안드로이드스튜디오 4.1.x 부터 테마 적용으로 인해
+         버튼은 backgroundTint 사용 필요
+    -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="텍스트뷰 입니다."
+        android:background="#FF0000"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="버튼입니다."
+        android:backgroundTint="#FF0000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼입니다."/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:text="버튼입니다."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="버튼입니다."/>
+
+</LinearLayout>
