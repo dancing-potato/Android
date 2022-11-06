@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--
+    EditText 위젯 : 텍스트를 입력받을 수 있는 위젯
+      => 기본적으로 텍스트 입력 범위를 벗어나면 줄바꿈이 수행되므로
+         singleLine 속성을 true로 설정하여 자동으로 옆으로 스크롤되도록 변경해야함
+    -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:hint="텍스트를 입력하세요."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:text="확인"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:text="입력받은 텍스트 출력 공간"
+        android:textSize="30sp"/>
+
+
+</LinearLayout>
