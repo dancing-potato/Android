@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!--
+    padding 속성: 자신의 내부 위젯 또는 텍스트 등과 자신의
+                  간격 조정 => 자신으로부터 대상을 얼마만큼 떨어뜨릴지 결정
+    layout_margin 속성: 자신과 상대방 사이의 간격 조정(위젯과 위젯 사이의 간격)
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아래에 이름을 입력: "
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여기에 채우세요"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+    <!--
+    visibility 속성: 해당 위젯 표시 여부 설정
+    1) visible : 위젯 표시
+    2) invisible : 위젯 미표시 (해당 위젯의 자리는 그대로 유지 = 단순 숨김처리)
+    3) gone : 위젯 미표시 (해당 위젯 자리까지 전부 제거)
+
+    enabled 속성 : 해당 위젯 활성화 여부 설정
+        => false : 비활성화, 동작 중지, 색상 회색으로 변경됨
+    clickable 속성 : 해당 위젯 클릭 가능 여부 설정
+        => fase : 클릭 불가
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼4"
+        android:id="@+id/btn4"
+        android:enabled="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼5"
+        android:id="@+id/btn5"
+        android:clickable="false"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
