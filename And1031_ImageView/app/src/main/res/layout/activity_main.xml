@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--
+    ImageView : 사진 등의 이미지를 표시하는 위젯
+    => 기본적으로 scaleType 속성값이 fitCenter 로 지정되어 있기 때문에
+       중심점을 기준으로 비율에 맞게 이미지를 확대/축소 시킴
+      -->
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_launcher"
+       android:id="@+id/iv"/>
+    <!--
+    ImageButton
+    기존 Button 과 형태는 동일하나 상속 구조가 달라 속성 등이 다름
+    => 이벤트 처리 과정을 동일함
+    => 기본적으로 scaleType 속성값이 center 로 지정되어 있기 때문에
+        중심점을 기준으로 원본 크기 그대로 배치함
+    -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/iBtn"/>
+
+</LinearLayout>
