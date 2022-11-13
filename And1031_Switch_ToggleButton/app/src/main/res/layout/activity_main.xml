@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw1"
+        android:text="Wi-Fi"
+        android:textSize="30sp"
+        android:checked="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:text="Wi-Fi 상세 옵션 설정"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swSub"
+        android:text="Wi-Fi boost"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Wi-Fi"
+        android:textSize="30sp"/>
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textOn="Bluetooth ON"
+        android:textOff="Bluetooth OFF"
+        android:checked="true"/>
+
+</LinearLayout>
