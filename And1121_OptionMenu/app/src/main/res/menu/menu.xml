@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    메뉴 생성을 위해서는
+    1. menu 태그를 사용하여 메뉴 항목을 포함하는 틀 정의
+    2. item 태그를 사용하여 메뉴의 각 항목 생성
+        - id 속성을 통해 메뉴 항목 구불 가능
+        - title 속성을 통해 메뉴의 텍스트 설정
+    -->
+    <item
+        android:id="@+id/itemRed"
+        android:title="배경색(빨강)"/>
+
+    <item
+        android:id="@+id/itemGreen"
+        android:title="배경색(초록)"/>
+
+    <item
+        android:id="@+id/itemBlue"
+        android:title="배경색(파랑)"/>
+
+    <!--
+    서브 메뉴 생성을 위해서는 item 태그 내에 다시 menu 태그를 사용하여
+    서브 메뉴로 사용할 메뉴의 항목들을 생성
+    -->
+    <item
+        android:title="버튼 변경(서브메뉴)">
+
+        <menu>
+            <item
+                android:id="@+id/subItemRotate"
+                android:title="이미지 회전"/>
+            <item
+                android:id="@+id/subItemExpand"
+                android:title="이미지 확대" />
+        </menu>
+
+    </item>
+
+
+</menu>
