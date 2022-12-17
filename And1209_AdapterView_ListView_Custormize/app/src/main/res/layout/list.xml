@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <!-- ListView 에서 표시할 하나의 항목을 디자인하는 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- 좌측 이미지 표시를 위한 ImageView 위젯 -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/ivItemImage"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"/>
+
+        <!-- 우측 텍스트 표시를 위한 LinearLayout -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <!-- 상단 제목 텍스트 표시를 위한 TextView-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tvTitle"
+                android:text="제목"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:gravity="center_vertical"/>
+
+            <!-- 하단 컨텐츠 텍스트 표시를 위한 TextView-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tvContent"
+                android:text="내용입니다."
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
