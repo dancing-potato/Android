@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ListView 위젯에서 표시할 하나의 항목을 디자인하는 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- 좌측 영화 포스터 표시를 위한 ImageView -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivMoviePoster"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"/>
+
+        <!-- 우측 영화 정보 출력 공간 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <!-- 상단 제목 출력 TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMovieNm"
+                android:text="영화제목"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- 하단 관객수 출력 TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAudiCnt"
+                android:text="관객 수"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FF0000FF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
